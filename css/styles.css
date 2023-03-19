@@ -1,0 +1,50 @@
+.flex-canvas {
+    display: flex;
+    width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.flex-canvas > svg {
+    width: 80%;
+    height: 500px;
+}
+
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
+.flex-container > div {
+    text-align: center;
+    line-height: 7px;
+    font-size: 20px;
+  }
+
+  .form {
+    width: 100%;
+  }
+    .form > p{
+        margin-left: 12.5%;
+        margin-right: 12.5%;
+        font-size: 20px;
+    }
+  .texto-area{
+    text-align: center;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    width: 75%;
+    height: 150px;
+  }
+
+  .boton-texto{
+    text-align: center;
+    margin-left: 45%;
+    margin-right: 45%;
+    width: 10%;
+  }
+
+

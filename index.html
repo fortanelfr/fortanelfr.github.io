@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="flex-canvas">
+    <svg id="canvas">
+    </svg>
+    </div>
+
+
+    <div class="flex-container">
+        <div>
+            <label for="Seleccion">Seleccione el idioma:</label>
+            <select id="idioma">
+                <option value="español">Español</option>
+                <option value="ingles">Inglés</option>
+            </select>
+       </div>
+       <div>
+        <label for="Seleccion_idioma">Seleccione el orden</label>
+        <select id="order">
+            <option value="desc">Descendente</option>
+            <option value="asc">Ascendente</option>
+        </select>
+       </div>
+    
+       <div>
+            <label >Numero de palabras [0-100]</label>
+            <input type="range" id="npalabras" min="0" max="100" value="50">
+            <p>Valor: <output id="value_palabras"></output></p>
+       </div>
+    </div>
+ 
+    <div class="flex-container">
+            <form class="form"  action="#">
+                <p>Ingrese el texto que deseas analizar</p>
+                <br>
+                <textarea class="texto-area" name = "description" id="texto_area">
+                </textarea>
+                <br>
+                <button class="boton-texto" type="button" id="dibujar">Dibujar</button>
+            </form>
+    </div>
+
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src=js/main.js></script>
+
+
+</body>
+</html>
