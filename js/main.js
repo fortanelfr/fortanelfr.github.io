@@ -224,9 +224,6 @@ fetch(texto)
         sessionStorage.setItem('texto', data[0].texto);
     })
 
-text_area.value = sessionStorage.getItem('texto')
-
-
 //Obtenemos los stopwords
 fetch(stop)
     .then((response) => response.json())
@@ -234,6 +231,15 @@ fetch(stop)
         sessionStorage.setItem('ingles', data[0].ingles);
         sessionStorage.setItem('español', data[0].español);
     })
+
+// Es necesario retrasar unos minisegundos la carga de la información para cargar el servidor
+setTimeout(() =>(
+    text_area.value = sessionStorage.getItem('texto')
+),100)
+
+
+
+
 
 //Obtenemos los datos del parametros numero de palabras y lo mostramos
 const value = document.getElementById("value_palabras")
@@ -245,7 +251,12 @@ input.addEventListener("input", (event) => {
 
 
 //Dibujamos el texto
-drawCloud()
+// Es necesario retrasar unos minisegundos la carga de la información para cargar el servidor
+setTimeout(() =>(
+    drawCloud()
+),100);
+
+
 
 
 
