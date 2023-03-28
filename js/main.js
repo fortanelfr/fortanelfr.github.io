@@ -235,7 +235,7 @@ fetch(stop)
 // Es necesario retrasar unos minisegundos la carga de la información para cargar el servidor
 setTimeout(() =>(
     text_area.value = sessionStorage.getItem('texto')
-),100)
+),200)
 
 
 
@@ -254,7 +254,7 @@ input.addEventListener("input", (event) => {
 // Es necesario retrasar unos minisegundos la carga de la información para cargar el servidor
 setTimeout(() =>(
     drawCloud()
-),100);
+),200);
 
 
 
